@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Nhập vào số nguyên dương bất kỳ"));
+        let sum = 0; // Biến lưu số đảo ngược
+
+        while(a>0){ //Lặp lại cho đến khi a=0
+            sum = sum*10 + a%10; // Số đảo ngược nhân thêm 1 hàng đơn vị sau đó cộng với số dư hàng đơn vị của số nhập
+            a = Math.floor(a/10); // chia lấy phần nguyên của số nhập cho đến khi bằng 0 thì dừng vào lặp while
+        }
+        console.log(`Số đảo ngược của ${a} là: ` +sum);
+    </script>
+</body>
+</html>

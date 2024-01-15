@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Nhập vào số nguyên dương bất kỳ"));
+        let sum = 0;
+        let result = "Bình phương các số nguyên dương chẵn là: ";
+        for(let i=1; i<a; i++){
+            if(i%2===0){
+                let kq = i**2;
+                sum += kq;
+                if(sum<=a){
+                    result += kq + " ";
+                }
+            }
+        }
+        console.log(result);
+    </script>
+</body>
+</html>

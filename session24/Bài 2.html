@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhập số a");
+        let b = +prompt("Nhập số b");
+        let sum = 0;
+        let le = "Các tổng số lẻ nằm trong khoảng a đến b là: "
+        let chan = "Cac tong số chăn nằm trong khoảng a đến b là: "
+
+        if(a>=b){
+            for(let i=0; i<=a; i++){
+                sum += i;
+                if(sum%2===1){
+                    if(sum>=b && sum<=a){
+                        le += sum + " " ; 
+                    }
+                }else{
+                    if(sum>=b && sum<=a){
+                        chan += sum + " " ;
+                    }
+                }
+            }
+        }else{
+            for(let i=0; i<=b; i++){
+                sum += i;
+                if(sum%2===1){
+                    if(sum>=a && sum<=b){
+                        le += sum + " " ;
+                    }
+                }else{
+                    if(sum>=a && sum<=b){
+                        chan += sum + " " ;
+                    }
+                }
+            }
+        }
+        console.log(le);
+        console.log(chan);
+    </script>
+</body>
+</html>

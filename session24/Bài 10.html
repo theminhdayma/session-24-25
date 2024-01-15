@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = parseInt(prompt("Nhập số nguyên dương n:"));
+        let arr = []; // mảng chứa các số nguyên tố sau khi phân giải
+
+        for (let i = 2; i <= number; i++) {
+            while (number % i === 0) {
+                arr.push(i); // thêm số nguyên tố vào mảng arr
+                number /= i; // Number chia i được số number mới và lại chạy lại cho tới khi number=0
+            }
+        }
+        console.log("Các số nguyên tố phân giải :", arr + ", ");
+    </script>
+</body>
+</html>

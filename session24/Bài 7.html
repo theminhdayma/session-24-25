@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function bcnn(a, b, c, d) {
+            let max = Math.max(a, b, c, d);
+            let lcm = max;
+
+            while (true) {
+                if (lcm % a === 0 && lcm % b === 0 && lcm % c === 0 && lcm % d === 0) {
+                    break;
+                }
+                lcm++;
+            }
+            return lcm;
+        }
+
+        let a = +prompt("Nhập số a");
+        let b = +prompt("Nhập số b");
+        let c = +prompt("Nhập số c");
+        let d = +prompt("Nhập số d");
+
+        let boiChungNhoNhat = bcnn(a, b, c, d);
+        console.log("Bội chung nhỏ nhất của 4 số là: " + boiChungNhoNhat);
+    </script>
+</body>
+</html>

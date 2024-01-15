@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Nhập chiều dài"));
+        let b = parseInt(prompt("Nhập chiều rộng"));
+
+        let max = Math.max(a,b);
+        let lcm = max;
+        while(true){
+            if(lcm%a===0 && lcm%b===0){
+                break;
+            }
+            lcm++;
+        }
+        console.log(`Số hình vuông tối thiểu trong hình chữ nhật là: ` +lcm);
+    </script>
+</body>
+</html>
